@@ -17,6 +17,7 @@ body{
     background-size: cover; /* This will ensure the image covers the whole section */
     background-position: center; /* This will center the image */
     min-height: 125vh;
+    width: 100%;
 }
 
 
