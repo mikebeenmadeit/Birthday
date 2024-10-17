@@ -18,6 +18,7 @@ body{
     background-position: center; /* This will center the image */
     min-height: 125vh;
     width: 100%;
+    position: relative;
 }
 
 
