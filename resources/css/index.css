@@ -12,6 +12,12 @@ body{
     
 }
 
+.header {
+    background-image: url('resources/Images/depositphotos_360090064-stock-photo-top-view-festive-colorful-confetti.jpg');
+    background-size: cover; /* This will ensure the image covers the whole section */
+    background-position: center; /* This will center the image */
+}
+
 
 
 nav{
