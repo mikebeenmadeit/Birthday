@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: montserrat;
+}
+
+
+nav{
+    background: white;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centers the nav items horizontally */
+    align-items: center;
+  }
+  
+  .top-bar{
+    color: black;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 50px;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+    padding-right: 190px;
+  }
+  
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    padding-right: 30px;
+    position: relative;
+    font-family: 'Dancing Script', cursive;
+  }
+  
+  nav ul li a{
+    font-size: 20px;
+    position: relative;
+    color: black;
+  }
+
+
+.toggle {
+    font-size: 1.5rem;
+    color: black;
+    cursor: pointer;
+    display: none;
+    padding-right: 23px;
+    padding-top: 27px;
+
+}
+
+.dropdown-menu a{
+    font-family: 'Dancing Script', cursive;
+    color: black;
+}
+
+.dropdown-menu a:hover{
+    font-family: 'Dancing Script', cursive;
+    color: #d2b48c;
+}
+
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 200px;
+    background-color: #d2b48c;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 1000; /* Ensure the dropdown menu stays above everything */
+    
+}
+
+.dropdown-menu.open {
+    height: 260px;
+    display: block;
+}
+
+
+.dropdown-menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+
+.divider {
+    color:#d2b48c;
+    border: none;
+    border-top: 2px solid #d2b48c; /* Adjust the color and thickness as needed */
+    margin: 20px 0; /* Add margin to control the distance between the line and content */
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    background-color: #d2b48c;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: black;
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+}
+
+.container .heading{
+    width: 50%;
+    padding-bottom: 50px;
+}
+
+.container .heading h1 {
+    font-size: 3em;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #222 ;
+    font-family: 'Dancing Script', cursive;
+    
+}
+
+
+.container .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.container .box .dream{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+
+.container .box .dream img{
+    width: 100%;
+    padding-bottom: 15px;
+    border-radius: 5px;
+}
+
+.footer-content{
+    padding-top: 37px;
+    background-color: white;
+    text-align: center;
+    padding-bottom: 10px;
+    color: #000;
+    font-family: 'Fira Sans', sans-serif;
+    
+}
+
+@media screen and (max-width:769px) {
+    .container .box{
+        flex-direction: column;         
+    }
+
+    .container .box .dream{
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width:643px) {
+    .container .heading{
+        width: 100%;
+    }
+    
+    .container .heading h1 {
+        font-size: 3em;
+        font-weight: bolder;
+        font-family: 'Dancing Script', cursive;
+        
+    }
+
+  
+}
+@media screen and (max-width: 850px) {
+    /* Adjust image size for smaller screens */
+    .top-bar {
+        font-size: 20px; /* You can adjust the font size as needed */
+        padding: 0 20px;
+        white-space: nowrap;
+        text-overflow: ellipsis; /* Adjust padding as needed */
+      }
+      
+  }
+
+  @media screen and (min-width: 851px) and (max-width: 1450px) {
+    /* Adjust image size and position for screens between 850px and 1000px */
+    .top-bar {
+        padding: 0 20px;
+        white-space: nowrap;
+        text-overflow: ellipsis; /* Adjust padding as needed */
+      }
+    
+  }
+
+
+  @media screen and (min-width: 1403px) and (max-width: 1510px) {
+
+    .top-bar {
+        font-size: 20px; /* You can adjust the font size as needed */
+        padding: 0 20px;
+        white-space: nowrap;
+        text-overflow: ellipsis; /* Adjust padding as needed */
+      }
+
+    nav ul {
+        display: flex;
+    }
+
+    .toggle {
+        display: none;
+    }
+
+    .dropdown-menu {
+        display: none;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .dropdown-menu {
+        left: 2rem;
+        width: unset;
+    }
+
+    #cont {
+        background-size: auto 80%; /* Adjust the background size for smaller screens */
+       
+    }
+
+
+}
+
+@media screen and (max-width: 1400px) {
+  .top-bar {
+    font-size: 20px;
+    /* You can adjust the font size as needed */
+    padding: 0 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    /* Adjust padding as needed */
+  }
+
+    nav ul {
+    display: none;
+  }
+
+
+  .toggle {
+    display: block; /* This line is causing the toggle to be visible */
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .dropdown-menu li {
+       font-size: 19px;
+}
+
+.footer-content {
+    font-size: 0.8em; /* Smaller footer font size */
+}
+}

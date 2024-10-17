@@ -12,14 +12,7 @@ body{
     
 }
 
-.header{
-    background-image: url("images/depositphotos_360090064-stock-photo-top-view-festive-colorful-confetti.jpg"); /* Apply background image once */
-    min-height: 100vh;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-}
+
 
 nav{
     background: white;
@@ -71,10 +64,13 @@ nav{
 
 .birthday-image {
     border-radius: 20px;
-    width: 700px;
+    width: 600px;
     height: auto;
     margin-left: 480px;
     margin-top: 90px;
+    padding-bottom: 140px;
+    
+
 }
 
 .text-box {
@@ -87,8 +83,9 @@ nav{
     left: 10px;
     width: 450px;
     margin-left: 300px;
-    height: 370px;
+    height: 383px;
     text-align: center; /* Centering the content */
+    
    
     
 }
@@ -134,7 +131,7 @@ nav{
 
 .dropdown-menu a:hover{
     font-family: 'Dancing Script', cursive;
-    color: #3c975a;
+    color: #d2b48c;
 }
 
   
@@ -154,7 +151,7 @@ nav{
 }
 
 .dropdown-menu.open {
-    height: 430px;
+    height: 260px;
     display: block;
 }
 
@@ -168,6 +165,7 @@ nav{
 
 /* Button Styling */
 .details-bt {
+    display: inline-block; /* Ensure it's like a button */
     padding: 12px 24px;
     font-size: 18px;
     color: white; /* Button text color */
@@ -177,17 +175,33 @@ nav{
     text-decoration: none; /* No underline */
     transition: all 0.3s ease; /* Transition for hover effect */
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Shadow for glowing effect */
-    margin-top: 50px; /* Space above the button */
+    margin-top: 42px; /* Space above the button */
+    font-family: 'Dancing Script', cursive;
+    position: relative; /* For hover underline effect */
 }
 
-
-
 /* Glowing hover effect for button */
-.btn:hover {
-    background-color: rgb(97, 16, 178);
+.details-bt:hover {
+    background-color: rgb(97, 16, 178); /* Change to purple on hover */
     color: white; /* Ensure text stays white on hover */
     box-shadow: 0 0 25px rgba(218, 165, 32, 0.8); /* Glowing effect */
     transform: scale(1.05); /* Slightly larger on hover */
+}
+
+/* Anchor hover underline effect */
+.details-bt::after {
+    content: "";
+    position: absolute;
+    background-color: #d2b48c;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: width 0.3s ease;
+}
+
+.details-bt:hover::after {
+    width: 100%; /* Expand underline on hover */
 }
 
 /* Divider Styling */
@@ -254,7 +268,6 @@ a:hover::after{
     font-family: 'Fira Sans', sans-serif;
     color: black;
     padding-bottom: 20px;
-    
 }
 
 @media (max-width: 1024px) {
@@ -289,9 +302,13 @@ a:hover::after{
     }
 
     .birthday-image {
-        width: 80%; /* Reduce image size */
+        width: 70%; /* Reduce image size */
         margin-left: 0; /* Center align the image */
         margin-top: 20px;
+    }
+
+    .header{
+        padding-bottom: 40px;
     }
 }
 
@@ -299,7 +316,7 @@ a:hover::after{
 @media (max-width: 768px) {
     /* Adjust the header section */
     .header {
-        min-height: 80vh; /* Reduce height for smaller screens */
+        min-height: 140vh; /* Reduce height for smaller screens */
     }
 
     /* Further adjustments for the text box */
@@ -333,6 +350,7 @@ a:hover::after{
         font-size: 1.2em; /* Smaller header font size */
     }
 
+
     /* Adjust navigation for small screens */
     .toggle {
         font-size: 1.2rem; /* Smaller icon size */
@@ -347,6 +365,8 @@ a:hover::after{
     .footer-content {
         font-size: 0.8em; /* Smaller footer font size */
     }
+
+ 
 }
 
 @media (min-width: 1027px) and (max-width: 1094px) {
@@ -382,7 +402,7 @@ a:hover::after{
 
 @media (min-width: 358px) and (max-width: 652px) {
     .header {
-        min-height: 100vh; /* Ensure it takes the full height */
+        min-height: 120vh; /* Ensure it takes the full height */
         background-position: center; /* Keep the image centered */
         background-size: cover; /* Ensure the image covers the entire area */
     }
@@ -413,4 +433,32 @@ a:hover::after{
     }
     
     }
+
+  
     
+
+@media (max-width: 600px) {
+    .birthday-image {
+        padding-bottom: 30px;
+    }
+    
+    }
+
+
+    @media (max-width: 385px) {
+        .birthday-image {
+            padding-bottom: 52px;
+        }
+        
+        }
+
+
+        @media screen and (max-width: 480px) {
+            .dropdown-menu li {
+                 font-size: 19px;
+          }
+          
+          .footer-content {
+              font-size: 0.8em; /* Smaller footer font size */
+          }
+          }     
