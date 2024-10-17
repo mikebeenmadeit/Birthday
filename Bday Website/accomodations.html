@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Users/mike/Documents/Bday Website/resources/css/accomodations.css">
+    <title>Tim&Kemi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/Users/mike/Documents/Bday Website/index.html">Home</a></li>
+            <li><a href="details.html">Details</a></li>
+            
+            <li><a href="/Users/mike/Documents/Bday Website/dress.html">Dress Code</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+        <div class="toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="dropdown-menu"> 
+                <li><a href="/Users/mike/Documents/Bday Website/index.html">Home</a></li>
+                <li><a href="details.html">Details</a></li>
+            
+                <li><a href="/Users/mike/Documents/Bday Website/dress.html">Dress Code</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="faq.html">FAQ</a></li> 
+        </div>
+  </nav>
+
+    <hr class="divider">
+
+    <div class="hotel-container">
+        <div class="hotels">
+            <img src="/Users/mike/Documents/Bday Website/resources/images/hotel2.jpeg" alt="">
+            <h2 class="hotel-text">The Ritz-Carlton, Portland</h2>
+            <p class="hotel-p">900 SW Washington St, Portland, OR 97205</p>
+            
+            <a href="https://www.wyndhamhotels.com/laquinta/hazelwood-missouri/la-quinta-inn-st-louis-hazelwood-airport-north/overview?CID=LC:6ysy27krtpcrqev:52933" target="_blank">
+            <button>BOOK A ROOM</button>
+            </a>
+        </div>
+
+        <div class="hotels">
+            <img src="/Users/mike/Documents/Bday Website/resources/images/hotel1.jpeg" alt="">
+            <h2 class="hotel-text" >The Nines, a Luxury Collection Hotel, Portland</h2>
+            <p class="hotel-p">525 SW Morrison St, Portland, OR 97204</p>
+            
+            <a href="https://www.choicehotels.com/missouri/hazelwood/comfort-inn-hotels/mo195?mc=llgoxxpx" target="_blank">
+                <button class="hotel-bt">BOOK A ROOM</button>
+            </a>
+        </div>
+
+        
+
+    </div>
+
+    <div class="airbnb-container">
+        <div class="airbnb-card">
+            <h2 class="airbnb-text">For Information on Airbnb Accommodations</h2>
+            <p class="airbnb-p">Please contact one of our event planners:</p>
+            <div class="event-planners">
+                <p>Yetunde Lasisi: <a href="tel:+1234567890">+1-404-717-6291</a></p>
+                <p>Aretha Ajiboye: <a href="tel:+0987654321">+1-360-980-0043</a></p>
+                <p>Bukola Akinrinmade: <a href="tel:+1122334455">+44-7825-5774-10</a></p>
+            </div>
+        </div>
+    </div>
+
+     <footer>
+        <div class="footer-content">
+            <p>Copyright &copy; 2024 Created by <span class="designer">Codewmike1@gmail.com</span></p>
+        </div>
+    </footer>
+
+    <script>
+        const toggle = document.querySelector('.toggle');
+        const toggleIcon = document.querySelector('.toggle i');
+        const dropdownMenu = document.querySelector('.dropdown-menu');
+        const dropdownItems = document.querySelectorAll('.dropdown-menu li');
+
+// Toggle the visibility of each dropdown item when the toggle icon is clicked
+        toggle.onclick = function () {
+         dropdownMenu.classList.toggle('open');
+        const isOpen = dropdownMenu.classList.contains('open');
+
+        toggleIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars';
+
+    // Toggle visibility of each dropdown item
+    dropdownItems.forEach(item => {
+        item.style.display = isOpen ? 'flex' : 'none';
+    });
+}; 
+// Close the dropdown menu and remove the 'open' class on any click outside the menu
+document.body.addEventListener('click', function (event) {
+            if (!dropdownMenu.contains(event.target) && !toggle.contains(event.target)) {
+                dropdownMenu.classList.remove('open');
+                toggleIcon.classList = 'fa-solid fa-bars';
+                dropdownItems.forEach(item => {
+                    item.style.display = 'none';
+                });
+            }
+        });
+
+
+
+      </script>
+  
+        
+
+
+    
+</body>
+</html>

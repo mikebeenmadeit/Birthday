@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bday website</title>
+    <link rel="stylesheet" href="/Users/mike/Documents/Bday Website/resources/css/dress.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="header">
+
+        <nav>
+            <ul>
+                <li><a href="/Users/mike/Documents/Bday Website/index.html">Home</a></li>
+                <li><a href="/Users/mike/Documents/Bday Website/details.html">Details</a></li>
+                <li><a href="/Users/mike/Documents/Bday Website/accomodations.html">Accomodations</a></li>   
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="/Users/mike/Documents/Bday Website/faq.html">FAQ</a></li>
+            </ul>
+            <div class="toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+    
+            <div class="dropdown-menu"> 
+                    <li><a href="/Users/mike/Documents/Bday Website/index.html">Home</a></li>
+                    <li><a href="/Users/mike/Documents/Bday Website/details.html">Details</a></li>
+                    <li><a href="/Users/mike/Documents/Bday Website/accomodations.html">Accomodations</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="/Users/mike/Documents/Bday Website/faq.html">FAQ</a></li> 
+            </div>
+      </nav>
+
+      <hr class="divider">
+
+      <H1>Dress Code</H1>
+
+    <div class="additional-content">
+        <h3>Asoebi Colors:</h3>
+        <p>We kindly ask our guest to dress in the chosen color palette for our special day.</p>
+        <p><b>Women:</b> Traditional dresses, headwraps (gele), and matching accessories.</p>
+        <p><b>Men:</b> Traditional agbada, kaftans, or other cultural attire.</p>
+
+       <div class="circle-container">
+        <div class="circle"></div>
+        <div class="black"></div>
+        
+        <div class="sauve"></div>
+    </div>
+
+
+    
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>Copyright &copy; 2024 Created by <span class="designer">Codewmike1@gmail.com</span></p>
+        </div>
+    </footer>
+
+    
+
+    <script>
+        const toggle = document.querySelector('.toggle');
+        const toggleIcon = document.querySelector('.toggle i');
+        const dropdownMenu = document.querySelector('.dropdown-menu');
+        const dropdownItems = document.querySelectorAll('.dropdown-menu li');
+
+// Toggle the visibility of each dropdown item when the toggle icon is clicked
+        toggle.onclick = function () {
+         dropdownMenu.classList.toggle('open');
+        const isOpen = dropdownMenu.classList.contains('open');
+
+        toggleIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars';
+
+    // Toggle visibility of each dropdown item
+    dropdownItems.forEach(item => {
+        item.style.display = isOpen ? 'flex' : 'none';
+    });
+}; 
+// Close the dropdown menu and remove the 'open' class on any click outside the menu
+document.body.addEventListener('click', function (event) {
+            if (!dropdownMenu.contains(event.target) && !toggle.contains(event.target)) {
+                dropdownMenu.classList.remove('open');
+                toggleIcon.classList = 'fa-solid fa-bars';
+                dropdownItems.forEach(item => {
+                    item.style.display = 'none';
+                });
+            }
+        });
+
+
+
+      </script>   
+</body>
+
+
+</html>

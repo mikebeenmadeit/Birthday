@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="/Users/mike/Documents/Bday Website/resources/css/faq.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="/Users/mike/Documents/Bday Website/index.html">Home</a></li>
+            <li><a href="details.html">Details</a></li>
+            <li><a href="/Users/mike/Documents/Bday Website/accomodations.html">Accomodations</a></li>
+            <li><a href="/Users/mike/Documents/Bday Website/dress.html">Dress Code</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            
+        </ul>
+        <div class="toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="dropdown-menu"> 
+                <li><a href="/Users/mike/Documents/Bday Website/index.html">Home</a></li>
+                <li><a href="details.html">Details</a></li>
+                <li><a href="/Users/mike/Documents/Bday Website/accomodations.html">Accomodations</a></li>
+                <li><a href="/Users/mike/Documents/Bday Website/dress.html">Dress Code</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                
+        </div>
+  </nav>
+
+    <div class="wrapper">
+        <h1>Frequently Asked Questions</h1>
+
+
+        <div class="faq">
+            <button class="accordion">
+                N/A
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+
+            <div class="pannel">
+                <p>N/A
+                </p>
+
+            </div>
+        </div>
+
+        <div class="faq">
+            <button class="accordion">
+                N/A
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+
+            <div class="pannel">
+                <p>N/A
+                </p>
+
+            </div>
+        </div>
+
+        <div class="faq">
+            <button class="accordion">
+                N/A
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+
+            <div class="pannel">
+                <p>N/A
+                </p>
+
+            </div>
+        </div>
+
+        <div class="faq">
+            <button class="accordion">
+                N/A
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+
+            <div class="pannel">
+                <p>N/A
+                </p>
+
+            </div>
+        </div>
+
+        <div class="faq">
+            <button class="accordion">
+                N/A
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+
+            <div class="pannel">
+                <p>N/A
+                </p>
+
+            </div>
+        </div>
+
+        
+
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>Copyright &copy; 2024 Created by <span class="designer">Codewmike1@gmail.com</span></p>
+        </div>
+    </footer>
+
+
+    
+      <script>
+        const toggle = document.querySelector('.toggle');
+        const toggleIcon = document.querySelector('.toggle i');
+        const dropdownMenu = document.querySelector('.dropdown-menu');
+        const dropdownItems = document.querySelectorAll('.dropdown-menu li');
+
+// Toggle the visibility of each dropdown item when the toggle icon is clicked
+        toggle.onclick = function () {
+         dropdownMenu.classList.toggle('open');
+        const isOpen = dropdownMenu.classList.contains('open');
+
+        toggleIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars';
+
+    // Toggle visibility of each dropdown item
+    dropdownItems.forEach(item => {
+        item.style.display = isOpen ? 'flex' : 'none';
+    });
+}; 
+// Close the dropdown menu and remove the 'open' class on any click outside the menu
+document.body.addEventListener('click', function (event) {
+            if (!dropdownMenu.contains(event.target) && !toggle.contains(event.target)) {
+                dropdownMenu.classList.remove('open');
+                toggleIcon.classList = 'fa-solid fa-bars';
+                dropdownItems.forEach(item => {
+                    item.style.display = 'none';
+                });
+            }
+        });
+
+
+
+
+      </script> 
+       
+      
+      
+       <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+    
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+    
+                    this.classList.toggle("active");
+                    this.parentElement.classList.toggle("active");
+    
+                    var panel = this.nextElementSibling;
+    
+                    if (panel.style.display === "block") {
+                        panel.style.display = "none";
+                    } else {
+                        panel.style.display = "block";
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

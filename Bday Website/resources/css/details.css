@@ -1,0 +1,463 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: montserrat;
+    
+    
+}
+
+
+
+nav{
+    background: white;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centers the nav items horizontally */
+    align-items: center;
+  }
+  
+  .top-bar{
+    color: black;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 50px;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+    padding-right: 190px;
+  }
+  
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    padding-right: 30px;
+    position: relative;
+    font-family: 'Dancing Script', cursive;
+  }
+  
+  nav ul li a{
+    font-size: 20px;
+    position: relative;
+    color: black;
+  }
+
+
+  .content {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center;     /* Center items vertically */
+    position: relative;
+    height: 100vh;          /* Full height of the viewport */
+    margin: 0;              /* Reset margin */
+}
+
+.birthday-image {
+    border-radius: 20px;
+    width: 600px;
+    height: auto;
+    margin-right: 20px;     /* Adjusted margin for spacing */
+}
+
+.text-box {
+    background-color: #d2b48c;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;      /* Centering the content */
+    width: 450px;            /* Fixed width */
+    height: auto;            /* Allow height to adjust based on content */
+}
+.p-p{
+    padding-bottom: 10px;
+
+}
+.event-details {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0; /* Adding some margin between the text elements */
+}
+.text-box p {
+    font-size: 18px;
+    color: #333;
+    
+}
+
+.first-p {
+    padding-bottom: 19px;
+}
+
+.text-box h2{
+    font-family: 'Dancing Script', cursive;
+    color: black;
+    font-weight: 900;
+    font-size: 1.5em;
+    padding-bottom: 18px;
+    
+}
+  
+.toggle {
+    font-size: 1.5rem;
+    color: black;
+    cursor: pointer;
+    display: none;
+    padding-right: 23px;
+    padding-top: 27px;
+
+}
+
+.dropdown-menu a{
+    font-family: 'Dancing Script', cursive;
+    color: black;
+}
+
+.dropdown-menu a:hover{
+    font-family: 'Dancing Script', cursive;
+    color: #d2b48c;
+}
+
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 200px;
+    background-color: #d2b48c;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 1000; /* Ensure the dropdown menu stays above everything */
+    
+}
+
+.dropdown-menu.open {
+    height: 260px;
+    display: block;
+}
+
+
+.dropdown-menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+/* Button Styling */
+.details-bt {
+    display: inline-block; /* Ensure it's like a button */
+    padding: 12px 24px;
+    font-size: 18px;
+    color: white; /* Button text color */
+    background-color: #d2b48c; /* Button background color */
+    border-radius: 25px; /* Rounded corners */
+    text-align: center;
+    text-decoration: none; /* No underline */
+    transition: all 0.3s ease; /* Transition for hover effect */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Shadow for glowing effect */
+    margin-top: 42px; /* Space above the button */
+    font-family: 'Dancing Script', cursive;
+    position: relative; /* For hover underline effect */
+}
+
+/* Glowing hover effect for button */
+.details-bt:hover {
+    background-color: rgb(97, 16, 178); /* Change to purple on hover */
+    color: white; /* Ensure text stays white on hover */
+    box-shadow: 0 0 25px rgba(218, 165, 32, 0.8); /* Glowing effect */
+    transform: scale(1.05); /* Slightly larger on hover */
+}
+
+/* Anchor hover underline effect */
+.details-bt::after {
+    content: "";
+    position: absolute;
+    background-color: #d2b48c;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: width 0.3s ease;
+}
+
+.details-bt:hover::after {
+    width: 100%; /* Expand underline on hover */
+}
+
+/* Divider Styling */
+.divider {
+    color: #d2b48c;
+    border: none;
+    border-top: 2px solid #d2b48c;
+    margin: 20px 0;
+}
+
+/* Anchor hover effects */
+a::after {
+    content: "";
+    position: absolute;
+    background-color: #d2b48c;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: black;
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+.divider {
+    color:#d2b48c;
+    border: none;
+    border-top: 2px solid #d2b48c; /* Adjust the color and thickness as needed */
+    margin: 20px 0; /* Add margin to control the distance between the line and content */
+}
+
+a::after{
+    content: "";
+    position: absolute;
+    background-color: #d2b48c;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+a:hover{
+    color: black;
+}
+
+a:hover::after{
+    width: 100%;
+}
+
+
+
+.footer-content{
+    padding-top: 10px;
+    background-color: white;
+    text-align: center;
+    padding-top: 40px;
+    font-family: 'Fira Sans', sans-serif;
+    color: black;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+    /* Adjust navigation bar */
+    nav ul {
+        display: none;
+    }
+
+    .toggle {
+        display: block; /* Show the hamburger menu */
+    }
+
+    .dropdown-menu {
+        display: none; /* Initially hidden */
+    }
+
+    .dropdown-menu.open {
+        display: block; /* Show when open */
+    }
+
+    /* Adjust the text box and image layout */
+    .content {
+        flex-direction: column; /* Stack elements vertically */
+        margin-top: 30px;
+    }
+
+    .text-box {
+        width: 80%; /* Reduce width of the text box */
+        margin-left: 0; /* Center align the text box */
+        height: auto; /* Adjust height to fit content */
+        bottom: auto; /* Remove fixed bottom positioning */
+    }
+
+    .birthday-image {
+        width: 70%; /* Reduce image size */
+        margin-left: 0; /* Center align the image */
+        margin-top: 20px;
+    }
+
+    .header{
+        padding-bottom: 40px;
+    }
+}
+
+/* Media Query for Mobile Phones */
+@media (max-width: 768px) {
+    /* Adjust the header section */
+    .header {
+        min-height: 140vh; /* Reduce height for smaller screens */
+    }
+
+    /* Further adjustments for the text box */
+    .text-box {
+        width: 90%; /* Make the text box more compact */
+        padding: 10px; /* Reduce padding */
+        font-size: 0.9em; /* Adjust font size */
+    }
+
+    /* Resize and center the image */
+    .birthday-image {
+        width: 90%; /* Smaller image size */
+        margin-top: 15px;
+    }
+
+    /* Button adjustments */
+    .details-bt {
+        padding: 10px 20px; /* Adjust button padding */
+        font-size: 16px; /* Smaller font size for button */
+    }
+}
+
+/* Media Query for Very Small Devices (small phones) */
+@media (max-width: 480px) {
+    /* Reduce font size and padding further */
+    .text-box p {
+        font-size: 16px;
+    }
+
+    .text-box h2 {
+        font-size: 1.2em; /* Smaller header font size */
+    }
+
+
+    /* Adjust navigation for small screens */
+    .toggle {
+        font-size: 1.2rem; /* Smaller icon size */
+        padding-right: 15px;
+    }
+
+    .details-bt {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .footer-content {
+        font-size: 0.8em; /* Smaller footer font size */
+    }
+
+ 
+}
+
+@media (min-width: 1027px) and (max-width: 1094px) {
+    /* Add your styles here for screens between 1027px and 1094px */
+
+    .text-box {
+        margin-left: 150px; /* Adjust this value as needed */
+       
+    }
+
+}
+@media (max-width: 1024px) {
+    .text-box {
+        position: absolute; /* Keep it absolute for precise positioning */
+        bottom: -310px; /* Adjust this value to control how much it overlaps the image */
+        left: 50%; /* Center it horizontally */
+        transform: translateX(-50%); /* Shift it left by half its width for true centering */
+        width: 90%; /* Keep it a percentage to maintain responsiveness */
+        max-width: 450px; /* Set a max-width to maintain a reasonable size */
+        height: auto; /* Allow height to adjust based on content */
+        margin-left: 0; /* Remove margin */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: keep the shadow effect */
+    }
+}
+
+@media (max-width: 1021px) {
+    .header {
+        min-height: 110vh; /* Ensure it takes the full height */
+        background-position: center; /* Keep the image centered */
+        background-size: cover; /* Ensure the image covers the entire area */
+    }
+}
+
+@media (min-width: 358px) and (max-width: 652px) {
+    .header {
+        min-height: 120vh; /* Ensure it takes the full height */
+        background-position: center; /* Keep the image centered */
+        background-size: cover; /* Ensure the image covers the entire area */
+    }
+
+}
+
+@media (min-width: 374px) and (max-width: 499px) {
+    .text-box {
+        bottom: -330px; /* Adjust this value to control how much it overlaps the image */   
+    }
+
+}
+
+
+@media (min-width: 367px) and (max-width: 456px) {
+    .header {
+        min-height: 92vh; /* Ensure it takes the full height */
+        background-position: center; /* Keep the image centered */
+        background-size: cover; /* Ensure the image covers the entire area */
+    }
+
+}
+
+@media (max-width: 438px) {
+    .dropdown-menu {
+        left: 2rem;
+        width: unset;
+    }
+    
+    }
+
+  
+    
+
+@media (max-width: 600px) {
+    .birthday-image {
+        padding-bottom: 30px;
+    }
+    
+    }
+
+
+    @media (max-width: 385px) {
+        .birthday-image {
+            padding-bottom: 52px;
+        }
+        
+        }
+
+
+        @media screen and (max-width: 480px) {
+            .dropdown-menu li {
+                 font-size: 19px;
+          }
+          
+          .footer-content {
+              font-size: 0.8em; /* Smaller footer font size */
+          }
+          }     
+
+          @media screen and (max-width: 1025px) {
+            .text-box {
+                margin-bottom: 700px;
+            }
+          }     

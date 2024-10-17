@@ -1,0 +1,378 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: montserrat;
+}
+
+.header{
+    background-color: #449ecb;
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    background: white;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centers the nav items horizontally */
+    align-items: center;
+
+  }
+  
+  .top-bar{
+    color: black;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 50px;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+  }
+  
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    padding-right: 30px;
+    position: relative;
+    font-family: 'Dancing Script', cursive;
+  }
+  
+  nav ul li a{
+    font-size: 20px;
+    position: relative;
+    color: black;
+  }
+
+
+  .toggle {
+    font-size: 1.5rem;
+    color: black;
+    cursor: pointer;
+    display: none;
+    padding-right: 23px;
+    padding-top: 27px;
+
+}
+
+.dropdown-menu a{
+    font-family: 'Dancing Script', cursive;
+    color: black;
+}
+
+.dropdown-menu a:hover{
+    font-family: 'Dancing Script', cursive;
+    color: #449ecb;
+}
+
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 200px;
+    background-color: #449ecb;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown-menu.open {
+     height: 260px;
+    display: block;
+    border: 2px solid #d2b48c; 
+}
+
+
+.dropdown-menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+  
+  
+
+.divider {
+    color:#d2b48c;
+    border: none;
+    border-top: 2px solid #449ecb; /* Adjust the color and thickness as needed */
+    margin: 20px 0; /* Add margin to control the distance between the line and content */
+}
+
+a::after{
+    content: "";
+    position: absolute;
+    background-color:#449ecb;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+a:hover{
+    color: black;
+}
+
+a:hover::after{
+    width: 100%;
+}
+
+body{
+    background:#449ecb;
+}
+
+
+
+.hotel-container {
+    display: flex;
+    justify-content: center;  /* Space between the hotel containers */
+    margin-bottom: 20px;  /* Add some space between each hotel container */
+    align-items: center;
+    padding-top: 23px;
+}
+
+.hotels {
+    padding: 20px;  /* Add padding to the hotel container */
+    width: 45%;  /* Adjust the width to your preference */
+    box-sizing: border-box;  /* Include padding and border in the total width */
+    text-align: center;
+
+}
+
+.hotels img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+
+}
+
+.hotel-text{
+    padding-top: 50px;
+    font-family: 'Fira Sans', sans-serif;
+    color: black;
+}
+
+.hotel-p{
+    padding-top: 45px;
+    padding-bottom: 45px;
+    font-family: 'Fira Sans', sans-serif;
+    color: black;
+}
+
+button {
+    background-color: grey;
+    color: #fff;
+    padding: 20px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.footer-content{
+    padding-top: 10px;
+    background-color: white;
+    text-align: center;
+    padding-top: 121px;
+    font-family: 'Fira Sans', sans-serif;
+    color: black;
+    
+}
+
+.airbnb-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    padding-bottom: 80px;
+    padding-top: 70px;
+    
+}
+
+.airbnb-card {
+    background-color: white;
+    border: 2px solid #d2b48c; /* To match the color scheme */
+    border-radius: 15px;
+    padding: 20px;
+    width: 60%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+.airbnb-text {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 24px;
+    color: #449ecb;
+    padding-bottom: 10px;
+}
+
+.airbnb-p {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
+    color: black;
+    padding-bottom: 15px;
+}
+
+.event-planners p {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+.event-planners a {
+    color: #449ecb;
+    text-decoration: none;
+}
+
+.event-planners a:hover {
+    text-decoration: underline;
+}
+
+.footer-content{
+  padding-top: 10px;
+  background-color: white;
+  text-align: center;
+  padding-top: 40px;
+  font-family: 'Fira Sans', sans-serif;
+  color: black;
+  padding-bottom: 20px;
+  
+}
+
+@media screen and (max-width: 1180px) {
+    /* Styles for screens less than 1000px wide */
+
+    .top-bar {
+        font-size: 22px; /* You can adjust the font size as needed */
+        padding: 0 20px;
+        white-space: nowrap;
+        text-overflow: ellipsis; /* Adjust padding as needed */
+      }
+
+    .hotel-container {
+      flex-direction: column;  /* Change to a column layout for smaller screens */
+      align-items: center;  /* Center-align items */
+    }
+  
+    .hotels {
+      width: 80%;  /* Adjust the width to allow more space for smaller screens */
+      margin-bottom: 10px;  /* Reduce the margin between hotel containers */
+    }
+  
+    .hotel-text {
+      font-size: 18px;  /* Adjust the font size for smaller screens */
+      padding-top: 20px;  /* Reduce the top padding */
+    }
+  
+    .hotel-p {
+      padding-top: 20px;  /* Reduce the top padding */
+      padding-bottom: 20px;  /* Reduce the bottom padding */
+    }
+  
+    button {
+      padding: 15px 20px;  /* Adjust the padding for smaller screens */
+    }
+  }
+  
+  @media screen and (max-width: 1180px) and (min-width: 730px) {
+    /* Styles for screens less than 900px wide but greater than or equal to 780px */
+    
+    .top-bar {
+        font-size: 22px; /* You can adjust the font size as needed */
+        padding: 0 20px;
+        white-space: nowrap;
+        text-overflow: ellipsis; /* Adjust padding as needed */
+      }
+    
+    .hotel-text {
+      font-size: 24px;  /* Adjust the font size for smaller screens */
+    }
+  
+    .hotel-p {
+      font-size: 20px;  /* Adjust the font size for smaller screens */
+    }
+  
+    button {
+      padding: 20px 30px;  /* Adjust the padding for smaller screens */
+    }
+  
+    .hotels img {
+      width: 400px;  /* Adjust the image width for smaller screens */
+      height: 400px; /* Adjust the image height for smaller screens */
+    }
+  }
+  
+ 
+
+
+  @media screen and (max-width: 1510px) {
+
+    .top-bar {
+        font-size: 27px; /* You can adjust the font size as needed */
+        padding: 0 20px;
+        white-space: nowrap;
+        text-overflow: ellipsis; /* Adjust padding as needed */
+      }
+
+    nav ul {
+        display: none;
+    }
+
+    .toggle {
+        display: block;
+    }
+
+    .dropdown-menu {
+        display: none;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .dropdown-menu {
+        left: 2rem;
+        width: unset;
+    }
+
+
+}
+
+@media screen and (max-width: 480px) {
+  .dropdown-menu li {
+       font-size: 19px;
+}
+}
+
+@media (max-width: 480px) {
+  /* Reduce font size and padding further */
+  .text-box p {
+      font-size: 16px;
+  }
+
+
+  .footer-content {
+      font-size: 0.8em; /* Smaller footer font size */
+  }
+
+
+}

@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: montserrat;
+    background-color:  #449ecb;
+}
+.header{
+    background-color:  #449ecb;
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+nav{
+    background: white;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centers the nav items horizontally */
+    align-items: center;
+  }
+  
+  .top-bar{
+    color: black;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 50px;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+  }
+  
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    padding-right: 30px;
+    position: relative;
+    font-family: 'Dancing Script', cursive;
+  }
+  
+  nav ul li a{
+    font-size: 20px;
+    position: relative;
+    color: black;
+  }
+
+
+.toggle {
+    font-size: 1.5rem;
+    color: black;
+    cursor: pointer;
+    display: none;
+    padding-right: 23px;
+    padding-top: 27px;
+
+}
+
+.dropdown-menu a{
+    font-family: 'Dancing Script', cursive;
+    color: black;
+}
+
+.dropdown-menu a:hover{
+    font-family: 'Dancing Script', cursive;
+    color: #449ecb;
+}
+
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 200px;
+    background-color:  #449ecb;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown-menu.open {
+    height: 260px;
+    display: block;
+    border: 2px solid #d2b48c; 
+}
+
+
+.dropdown-menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+
+
+.wrapper {
+    max-width: 75%;
+    margin: auto;
+}
+
+.wrapper > p,
+.wrapper > h1
+
+{
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+.wrapper > h1 {
+    letter-spacing: 3px;
+   
+}
+
+.accordion{
+    background-color: white;
+    color: rgba(0,0,0,0.8);
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 2rem 2.5rem;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.accordion i {
+    font-size: 1.6rem;
+    
+}
+
+.active,
+.accordion:hover {
+    background-color: white;
+}
+
+.pannel {
+    padding: 0 2rem 2.5rem 2rem;
+    background-color: white;
+    overflow: hidden;
+    background-color: #f1f7f5;
+    display: none;
+    
+}
+
+
+
+.pannel p{
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1.2rem;
+    line-height: 1.4;
+    padding-top: 9px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+
+.faq{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 10px 0;
+    border-radius: 18px; /* Add rounded corners */
+    overflow: hidden; 
+    
+}
+
+.faq.active {
+    border: none;
+}
+
+h1{
+    font-family: 'Dancing Script', cursive;
+
+}
+
+.footer-content{
+    padding-top: 10px;
+    background-color: white;
+    text-align: center;
+    padding-top: 40px;
+    font-family: 'Fira Sans', sans-serif;
+    color: black;
+    padding-bottom: 20px;
+    
+}
+
+.wrapper{
+    padding-bottom: 30px;
+}
+
+
+
+@media screen and (max-width: 1510px) {
+
+    .top-bar {
+        font-size: 27px; /* You can adjust the font size as needed */
+        padding: 0 20px;
+        white-space: nowrap;
+        text-overflow: ellipsis; /* Adjust padding as needed */
+      }
+  
+    nav ul {
+        display: none;
+    }
+  
+    .toggle {
+        display: block;
+    }
+  
+    .dropdown-menu {
+        display: none;
+    }
+  }
+  
+  
+  @media (max-width: 576px) {
+    .dropdown-menu {
+        left: 2rem;
+        width: unset;
+    }
+  
+  
+  }
+
+
+@media screen and (max-width: 480px) {
+    .dropdown-menu li {
+         font-size: 19px;
+    }
+
+    .footer-content {
+        font-size: 0.8em; /* Smaller footer font size */
+    }
+    
+    }
+    
+    @media (max-width: 438px) {
+    .dropdown-menu {
+        left: 2rem;
+        width: unset;
+    }
+    
+    }
+    

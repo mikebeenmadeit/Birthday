@@ -1,0 +1,401 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: montserrat;
+}
+
+.header{
+    background-color: white;
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    background: white;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centers the nav items horizontally */
+    align-items: center;
+  }
+  
+  .top-bar{
+    color: black;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 50px;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+  }
+  
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    padding-right: 30px;
+    position: relative;
+    font-family: 'Dancing Script', cursive;
+  }
+  
+  nav ul li a{
+    font-size: 20px;
+    position: relative;
+    color: black;
+  }
+
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    position: relative;
+}
+
+.birthday-image {
+    border-radius: 20px;
+    width: 700px;
+    height: auto;
+    margin-left: 480px;
+    margin-top: 90px;
+}
+
+.text-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    bottom: 45px;
+    left: 10px;
+    width: 450px;
+    margin-left: 300px;
+    height: 320px;
+   
+    
+}
+
+.text-box p {
+    font-size: 18px;
+    color: #333;
+}
+  
+.toggle {
+    font-size: 1.5rem;
+    color: black;
+    cursor: pointer;
+    display: none;
+    padding-right: 23px;
+    padding-top: 27px;
+
+}
+
+.dropdown-menu a{
+    font-family: 'Dancing Script', cursive;
+    color: black;
+}
+
+.dropdown-menu a:hover{
+    font-family: 'Dancing Script', cursive;
+    color: #449ecb;
+}
+
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 200px;
+    background-color: #449ecb;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown-menu.open {
+  height: 260px;
+  display: block;
+  border: 2px solid #d2b48c; 
+}
+
+
+.dropdown-menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+
+.divider {
+    border: none;
+    border-top: 1px solid #ccc; /* Adjust the color and thickness as needed */
+    margin: 20px 0; /* Add margin to control the distance between the line and content */
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    text-align: center;
+    padding-top: 130px;
+
+}
+
+.additional-content h3{
+    padding-bottom: 25px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.additional-content p {
+    max-width: 730px; /* Adjust the max-width as needed */
+    margin: 0 auto; /* Center the paragraph */
+    padding-bottom: 25px;
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 1.5;
+}
+.additional-content p b {
+    font-weight: 900; /* Increase font weight for <b> tags */
+}
+
+
+
+.column {
+    flex-basis: 48%;
+    margin-right:22px; /* Adjust the amount of space here */
+    padding-left: 63px;
+}
+
+.column:last-child {
+    margin-right: 24; /* Remove margin from the last column */
+}
+
+h1 {
+    text-align: center;
+    padding-top: 38px;
+    font-family: 'Dancing Script', cursive;
+}
+
+
+.column h2 {
+    margin-top: 0;
+    padding-bottom: 65px;
+    font-family: 'Dancing Script' , cursive;
+}
+
+.circle {
+    width: 115px;  /* Adjust the width as needed */
+    height: 115px; /* Adjust the height as needed */
+    background-color: #d2b48c;
+    border-radius: 50%;
+    margin: 0 10px; /* Adjust the margin as needed */
+}
+.black {
+    width: 115px;  /* Adjust the width as needed */
+    height: 115px; /* Adjust the height as needed */
+    background-color: #3c975a;
+    border-radius: 50%;
+    margin: 0 10px; 
+}
+.sauve {
+    width: 115px;  /* Adjust the width as needed */
+    height: 115px; /* Adjust the height as needed */
+    background-color: #800020;
+    border-radius: 50%;
+    margin: 0 10px; 
+}
+
+.additional-content {
+    text-align: center;
+    margin-bottom: 20px; /* Adjust the margin as needed */
+    padding-top: 30px;
+    
+}
+.circle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Align items in the center vertically */
+    margin-top: 20px; /* Adjust the margin as needed */
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  background-color: #d2b48c; /* Gold-yellow color */
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s ease; /* Smooth transition */
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.footer-content{
+  padding-top: 10px;
+  background-color: white;
+  text-align: center;
+  padding-top: 40px;
+  font-family: 'Fira Sans', sans-serif;
+  color: black;
+  padding-bottom: 20px;
+  
+}
+
+
+
+@media screen and (max-width: 1180px) {
+    /* Styles for screens less than 1000px wide */
+
+    .top-bar {
+        font-size: 22px; /* You can adjust the font size as needed */
+        padding: 0 20px;
+        white-space: nowrap;
+        text-overflow: ellipsis; /* Adjust padding as needed */
+      }
+
+    .hotel-container {
+      flex-direction: column;  /* Change to a column layout for smaller screens */
+      align-items: center;  /* Center-align items */
+    }
+  
+    .hotels {
+      width: 80%;  /* Adjust the width to allow more space for smaller screens */
+      margin-bottom: 10px;  /* Reduce the margin between hotel containers */
+    }
+  
+    .hotel-text {
+      font-size: 18px;  /* Adjust the font size for smaller screens */
+      padding-top: 20px;  /* Reduce the top padding */
+    }
+  
+    .hotel-p {
+      padding-top: 20px;  /* Reduce the top padding */
+      padding-bottom: 20px;  /* Reduce the bottom padding */
+    }
+  
+    button {
+      padding: 15px 20px;  /* Adjust the padding for smaller screens */
+    }
+  }
+  
+  @media screen and (max-width: 1180px) and (min-width: 730px) {
+    /* Styles for screens less than 900px wide but greater than or equal to 780px */
+    
+    .top-bar {
+        font-size: 22px; /* You can adjust the font size as needed */
+        padding: 0 20px;
+        white-space: nowrap;
+        text-overflow: ellipsis; /* Adjust padding as needed */
+      }
+    
+    .hotel-text {
+      font-size: 24px;  /* Adjust the font size for smaller screens */
+    }
+  
+    .hotel-p {
+      font-size: 20px;  /* Adjust the font size for smaller screens */
+    }
+  
+    button {
+      padding: 20px 30px;  /* Adjust the padding for smaller screens */
+    }
+  
+    .hotels img {
+      width: 400px;  /* Adjust the image width for smaller screens */
+      height: 400px; /* Adjust the image height for smaller screens */
+    }
+  }
+  
+ 
+
+
+  @media screen and (max-width: 1510px) {
+
+    .top-bar {
+        font-size: 27px; /* You can adjust the font size as needed */
+        padding: 0 20px;
+        white-space: nowrap;
+        text-overflow: ellipsis; /* Adjust padding as needed */
+      }
+
+    nav ul {
+        display: none;
+    }
+
+    .toggle {
+        display: block;
+    }
+
+    .dropdown-menu {
+        display: none;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .dropdown-menu {
+        left: 2rem;
+        width: unset;
+    }
+
+
+}
+
+@media screen and (max-width: 480px) {
+  .dropdown-menu li {
+       font-size: 19px;
+}
+}
+
+
+@media (max-width: 618px) {
+   
+
+     .additional-content p {
+        max-width: 400px;
+    }
+
+     .additional-content p {
+        font-size: 17px;
+    }
+
+
+}
+
+@media (max-width: 415px) {
+   
+  .additional-content p {
+     max-width: 350px;
+ }
+
+}
+
+@media (max-width: 480px) {
+
+  .footer-content {
+      font-size: 0.8em; /* Smaller footer font size */
+  }
+
+
+}
