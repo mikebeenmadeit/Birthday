@@ -34,7 +34,7 @@ nav{
     line-height: 80px;
     padding: 0 50px;
     font-weight: bold;
-    font-family: 'Dancing Script', cursive;
+    font-family: "Open Sans", sans-serif;
   }
   
   nav ul{
@@ -48,7 +48,7 @@ nav{
     margin: 0 5px;
     padding-right: 30px;
     position: relative;
-    font-family: 'Dancing Script', cursive;
+    font-family: "Open Sans", sans-serif;
   }
   
   nav ul li a{
@@ -105,12 +105,12 @@ nav{
 }
 
 .dropdown-menu a{
-    font-family: 'Dancing Script', cursive;
+    font-family: "Open Sans", sans-serif;
     color: black;
 }
 
 .dropdown-menu a:hover{
-    font-family: 'Dancing Script', cursive;
+    font-family: "Open Sans", sans-serif;
     color: #d2b48c;
 }
 
@@ -162,14 +162,14 @@ nav{
 
 .additional-content h3{
     padding-bottom: 25px;
-    font-family: 'Dancing Script', cursive;
+    font-family: "Open Sans", sans-serif;
 }
 
 .additional-content p {
     max-width: 730px; /* Adjust the max-width as needed */
     margin: 0 auto; /* Center the paragraph */
     padding-bottom: 25px;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     line-height: 1.5;
 }
 .additional-content p b {
@@ -191,14 +191,14 @@ nav{
 h1 {
     text-align: center;
     padding-top: 38px;
-    font-family: 'Dancing Script', cursive;
+    font-family: "Open Sans", sans-serif;
 }
 
 
 .column h2 {
     margin-top: 0;
     padding-bottom: 65px;
-    font-family: 'Dancing Script' , cursive;
+    font-family: "Open Sans", sans-serif;
 }
 
 .circle {
@@ -257,7 +257,7 @@ nav ul li a:hover::after {
   background-color: white;
   text-align: center;
   padding-top: 33px;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: black;
   padding-bottom: 20px;
   
