@@ -6,7 +6,8 @@
     font-family: 'Arial', sans-serif; 
     margin: 0; 
     padding: 0;
-    height: 100vh;
+    width: 100%;
+    height: 172vh;
   }
   .backdrop-overlay{
     top: 0;
