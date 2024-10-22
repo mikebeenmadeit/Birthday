@@ -12,14 +12,7 @@ body{
     
 }
 
-.header {
-    background-image: url('resources/Images/depositphotos_360090064-stock-photo-top-view-festive-colorful-confetti.jpg');
-    background-size: cover; /* This will ensure the image covers the whole section */
-    background-position: center; /* This will center the image */
-    min-height: 125vh;
-    width: 100%;
-    position: relative;
-}
+
 
 
 
@@ -72,7 +65,7 @@ nav{
 }
 
 .birthday-image {
-    border-radius: 20px;
+    border-radius: 25px;
     width: 600px;
     height: auto;
     margin-left: 480px;
@@ -92,8 +85,9 @@ nav{
     left: 10px;
     width: 450px;
     margin-left: 300px;
-    height: 383px;
+    height: 400px;
     text-align: center; /* Centering the content */
+    padding: 30px;
     
    
     
@@ -129,7 +123,7 @@ nav{
     cursor: pointer;
     display: none;
     padding-right: 23px;
-    padding-top: 27px;
+    padding-top: 4px;
 
 }
 
@@ -160,7 +154,7 @@ nav{
 }
 
 .dropdown-menu.open {
-    height: 260px;
+    height: 318px;
     display: block;
 }
 
@@ -440,9 +434,22 @@ a:hover::after{
         left: 2rem;
         width: unset;
     }
+
+      .top-bar {
+        font-size: 18px;
+    }
     
     }
 
+ @media (max-width: 507px) {
+    
+        .top-bar {
+            font-size: 18px;
+        }
+    
+    
+        
+        }
   
     
 
@@ -471,3 +478,15 @@ a:hover::after{
               font-size: 0.8em; /* Smaller footer font size */
           }
           }     
+
+
+    @media screen and (max-width: 412px) {
+            .dropbackground {
+                height: 70vh;
+              }
+
+              .text-box {
+                margin-top: 80px;
+            }
+          } 
+          
