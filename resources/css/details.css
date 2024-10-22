@@ -151,6 +151,13 @@ nav{
      border: 1px solid white; 
 }
 
+.divider {
+    color: #d2b48c;
+    border: none;
+    border-top: 2px solid #d2b48c;
+    margin: 20px 0;
+}
+
 
 .dropdown-menu li {
     padding: 0.7rem;
