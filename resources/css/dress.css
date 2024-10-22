@@ -111,7 +111,7 @@ nav{
 
 .dropdown-menu a:hover{
     font-family: 'Dancing Script', cursive;
-    color: #449ecb;
+    color: #d2b48c;
 }
 
   
@@ -121,7 +121,7 @@ nav{
     right: 2rem;
     top: 60px;
     width: 200px;
-    background-color: #449ecb;
+    background-color: #d2b48c;
     backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden;
@@ -225,8 +225,9 @@ h1 {
 
 .additional-content {
     text-align: center;
-    margin-bottom: 20px; /* Adjust the margin as needed */
     padding-top: 30px;
+    padding-bottom: 70px; /* Ensures there's space above the footer */
+    margin-bottom: 100px; 
     
 }
 .circle-container {
@@ -255,7 +256,7 @@ nav ul li a:hover::after {
   padding-top: 10px;
   background-color: white;
   text-align: center;
-  padding-top: 40px;
+  padding-top: 33px;
   font-family: 'Fira Sans', sans-serif;
   color: black;
   padding-bottom: 20px;
@@ -369,19 +370,7 @@ nav ul li a:hover::after {
 }
 
 
-@media (max-width: 618px) {
-   
 
-     .additional-content p {
-        max-width: 400px;
-    }
-
-     .additional-content p {
-        font-size: 17px;
-    }
-
-
-}
 
 @media (max-width: 415px) {
    
@@ -396,6 +385,17 @@ nav ul li a:hover::after {
   .footer-content {
       font-size: 0.8em; /* Smaller footer font size */
   }
+
+
+}
+
+@media (max-width: 565px) {
+
+  .dropbackground{
+   
+    height: 183vh;
+  }
+
 
 
 }
