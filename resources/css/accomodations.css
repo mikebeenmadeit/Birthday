@@ -288,6 +288,10 @@ button {
     button {
       padding: 15px 20px;  /* Adjust the padding for smaller screens */
     }
+
+     .dropbackground {
+      min-height: 193vh;
+    }
   }
   
   @media screen and (max-width: 1180px) and (min-width: 730px) {
