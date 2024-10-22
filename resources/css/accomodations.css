@@ -76,7 +76,7 @@ nav{
 
 .dropdown-menu a:hover{
     font-family: 'Dancing Script', cursive;
-    color: #449ecb;
+    color: #d2b48c;
 }
 
   
@@ -86,7 +86,7 @@ nav{
     right: 2rem;
     top: 60px;
     width: 200px;
-    background-color: #449ecb;
+    background-color: #d2b48c;
     backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden;
@@ -112,14 +112,14 @@ nav{
 .divider {
     color:#d2b48c;
     border: none;
-    border-top: 2px solid #449ecb; /* Adjust the color and thickness as needed */
+    border-top: 2px solid #d2b48c; /* Adjust the color and thickness as needed */
     margin: 20px 0; /* Add margin to control the distance between the line and content */
 }
 
 a::after{
     content: "";
     position: absolute;
-    background-color:#449ecb;
+    background-color:#d2b48c;
     height: 3px;
     width: 0;
     left: 0;
@@ -133,10 +133,6 @@ a:hover{
 
 a:hover::after{
     width: 100%;
-}
-
-body{
-    background:#449ecb;
 }
 
 
@@ -222,7 +218,7 @@ button {
 .airbnb-text {
     font-family: 'Fira Sans', sans-serif;
     font-size: 24px;
-    color: #449ecb;
+    color: #d2b48c;
     padding-bottom: 10px;
 }
 
@@ -240,7 +236,7 @@ button {
 }
 
 .event-planners a {
-    color: #449ecb;
+    color: #d2b48c;
     text-decoration: none;
 }
 
@@ -252,7 +248,7 @@ button {
   padding-top: 10px;
   background-color: white;
   text-align: center;
-  padding-top: 40px;
+  padding-top: 74px;
   font-family: 'Fira Sans', sans-serif;
   color: black;
   padding-bottom: 20px;
