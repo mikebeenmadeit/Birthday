@@ -7,11 +7,11 @@
 
 body{
     font-family: montserrat;
-    background-color:  #449ecb;
+    
 }
 .header{
-    background-color:  #449ecb;
-    min-height: 100vh;
+    
+    min-height: 18vh;
     width: 100%;
     background-position: center;
     background-size: cover;
@@ -75,7 +75,7 @@ nav{
 
 .dropdown-menu a:hover{
     font-family: 'Dancing Script', cursive;
-    color: #449ecb;
+    color: #d2b48c;
 }
 
   
@@ -105,6 +105,13 @@ nav{
     align-items: center;
     justify-content: center;
 } 
+
+.divider {
+    color:#d2b48c;
+    border: none;
+    border-top: 2px solid #d2b48c; /* Adjust the color and thickness as needed */
+    margin: 20px 0; /* Add margin to control the distance between the line and content */
+  }
 
 
 
@@ -202,7 +209,7 @@ h1{
 }
 
 .wrapper{
-    padding-bottom: 30px;
+    padding-bottom: 2px;
 }
 
 
