@@ -436,7 +436,7 @@ a:hover::after{
     }
 
       .top-bar {
-        font-size: 18px;
+        font-size: 20px;
     }
     
     }
@@ -444,7 +444,7 @@ a:hover::after{
  @media (max-width: 507px) {
     
         .top-bar {
-            font-size: 18px;
+            font-size: 20px;
         }
     
     
