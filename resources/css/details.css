@@ -42,7 +42,7 @@ nav{
     margin: 0 5px;
     padding-right: 30px;
     position: relative;
-    font-family: 'Dancing Script', cursive;
+    font-family: "Open Sans", sans-serif;
   }
   
   nav ul li a{
@@ -116,12 +116,12 @@ nav{
 }
 
 .dropdown-menu a{
-    font-family: 'Dancing Script', cursive;
+    font-family: "Open Sans", sans-serif;
     color: black;
 }
 
 .dropdown-menu a:hover{
-    font-family: 'Dancing Script', cursive;
+    font-family: "Open Sans", sans-serif;
     color: #d2b48c;
 }
 
@@ -179,7 +179,7 @@ nav{
     transition: all 0.3s ease; /* Transition for hover effect */
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Shadow for glowing effect */
     margin-top: 42px; /* Space above the button */
-    font-family: 'Dancing Script', cursive;
+    font-family: "Open Sans", sans-serif;
     position: relative; /* For hover underline effect */
 }
 
@@ -268,7 +268,7 @@ a:hover::after{
     background-color: white;
     text-align: center;
     padding-top: 40px;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     color: black;
     padding-bottom: 20px;
 }
@@ -277,7 +277,7 @@ a:hover::after{
     background-image: url('/Users/mike/Documents/Bday Website/resources/images/IMG_5978.JPG'); 
     background-size: 60% auto; 
     background-position: right top; 
-    font-family: 'Arial', sans-serif; 
+    font-family: "Open Sans", sans-serif; 
     margin: 0; 
     padding: 0;
   }
