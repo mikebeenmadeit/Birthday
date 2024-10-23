@@ -49,7 +49,7 @@ nav{
     margin: 0 5px;
     padding-right: 30px;
     position: relative;
-    font-family: 'Dancing Script', cursive;
+    font-family: "Open Sans", sans-serif;
   }
   
   nav ul li a{
@@ -70,12 +70,12 @@ nav{
 }
 
 .dropdown-menu a{
-    font-family: 'Dancing Script', cursive;
+    font-family: "Open Sans", sans-serif;
     color: black;
 }
 
 .dropdown-menu a:hover{
-    font-family: 'Dancing Script', cursive;
+    font-family: "Open Sans", sans-serif;
     color: #d2b48c;
 }
 
@@ -164,14 +164,14 @@ a:hover::after{
 
 .hotel-text{
     padding-top: 50px;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     color: black;
 }
 
 .hotel-p{
     padding-top: 45px;
     padding-bottom: 45px;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     color: black;
 }
 
@@ -182,7 +182,7 @@ button {
     border: none;
     cursor: pointer;
     border-radius: 15px;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 .footer-content{
@@ -190,7 +190,7 @@ button {
     background-color: white;
     text-align: center;
     padding-top: 121px;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     color: black;
     
 }
@@ -216,21 +216,21 @@ button {
 }
 
 .airbnb-text {
-    font-family: 'Fira Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 24px;
     color: #d2b48c;
     padding-bottom: 10px;
 }
 
 .airbnb-p {
-    font-family: 'Fira Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 18px;
     color: black;
     padding-bottom: 15px;
 }
 
 .event-planners p {
-    font-family: 'Fira Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 16px;
     color: #333;
 }
@@ -249,7 +249,7 @@ button {
   background-color: white;
   text-align: center;
   padding-top: 74px;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: black;
   padding-bottom: 20px;
   
