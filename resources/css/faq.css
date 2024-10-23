@@ -69,12 +69,12 @@ nav{
 }
 
 .dropdown-menu a{
-    font-family: 'Dancing Script', cursive;
+    font-family: "Open Sans", sans-serif;
     color: black;
 }
 
 .dropdown-menu a:hover{
-    font-family: 'Dancing Script', cursive;
+    font-family: "Open Sans", sans-serif;
     color: #d2b48c;
 }
 
@@ -147,7 +147,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     font-weight: bold;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 .accordion i {
@@ -176,7 +176,7 @@ nav{
     font-size: 1.2rem;
     line-height: 1.4;
     padding-top: 9px;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 
@@ -202,7 +202,7 @@ h1{
     background-color: white;
     text-align: center;
     padding-top: 40px;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     color: black;
     padding-bottom: 20px;
     
