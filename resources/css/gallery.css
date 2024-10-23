@@ -40,7 +40,7 @@ nav ul li{
     margin: 0 5px;
     padding-right: 30px;
     position: relative;
-    font-family: 'Dancing Script', cursive;
+    font-family: "Open Sans", sans-serif;
   }
   
   nav ul li a{
@@ -61,12 +61,12 @@ nav ul li{
 }
 
 .dropdown-menu a{
-    font-family: 'Dancing Script', cursive;
+    font-family: "Open Sans", sans-serif;
     color: black;
 }
 
 .dropdown-menu a:hover{
-    font-family: 'Dancing Script', cursive;
+    font-family: "Open Sans", sans-serif;
     color: #d2b48c;
 }
 
@@ -175,7 +175,7 @@ a:hover::after {
     text-align: center;
     padding-bottom: 10px;
     color: #000;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     
 }
 
