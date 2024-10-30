@@ -264,6 +264,16 @@ nav ul li a:hover::after {
   
 }
 
+.circle-container .color-label {
+  text-align: center;
+  font-size: 16px; /* Adjust font size as needed */
+  color: #333; /* Text color */
+  margin-top: 10px; /* Space between circle and label */
+  font-family: "Open Sans", sans-serif;
+  padding-top: 110px;
+}
+
+
 
 
 @media screen and (max-width: 1180px) {
