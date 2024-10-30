@@ -34,7 +34,7 @@ nav{
     line-height: 80px;
     padding: 0 50px;
     font-weight: bold;
-    font-family: 'Dancing Script', cursive;
+    font-family: "Open Sans", sans-serif;
   }
   
   nav ul{
@@ -48,7 +48,7 @@ nav{
     margin: 0 5px;
     padding-right: 30px;
     position: relative;
-    font-family: 'Dancing Script', cursive;
+    font-family: "Open Sans", sans-serif;
   }
   
   nav ul li a{
